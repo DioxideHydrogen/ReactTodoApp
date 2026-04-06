@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"noEmit": true,
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"jsx": "preserve"
+	},
+	"include": ["src/**/*.js", "src/**/*.jsx", "vite.config.js", "eslint.config.js", "src/App.tsx", "src/main.tsx"],
+	"exclude": ["node_modules", "dist"]
+}
