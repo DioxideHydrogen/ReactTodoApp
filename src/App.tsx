@@ -32,7 +32,12 @@ function App() {
       <Navbar />
       <div className='bg-slate-300 min-h-screen'>
         <div className="container mx-auto p-4">
-          <h1 className="text-2xl font-bold mb-4">My Tasks</h1>
+          <div className='flex items-baseline justify-between mb-4'>
+            <h1 className="text-2xl font-bold mb-4">My Tasks</h1>
+            <p>
+              {tasks.map(task => task.completed).filter(completed => completed).length} of {tasks.length} tasks completed
+            </p>
+          </div>
           <div className="mb-4">
             {tasks.length === 0 ? (
               <p className="text-gray-500">No tasks yet. Add a task to get started!</p>
