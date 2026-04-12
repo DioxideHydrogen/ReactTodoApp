@@ -2,3 +2,31 @@
 html, body {
   overflow-y: auto;
 }
+
+.dashboard {
+  @apply bg-slate-50 h-full p-5 pt-2 rounded;
+}
+
+.cards {
+  @apply  flex justify-stretch gap-1;
+}
+
+.card__item {
+  @apply p-2 rounded-sm shadow-lg flex flex-1 bg-slate-50;
+}
+
+.card__item-icon {
+  @apply px-2 flex items-center;
+}
+
+.card__item-info-header {
+  @apply text-xl;
+}
+
+.card__item-info-body {
+  @apply flex gap-1 items-end;
+}
+
+.card__item-info-body-count {
+  @apply text-xl;
+}
