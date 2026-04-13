@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
   font-family: 'Inter', sans-serif;
@@ -11,9 +10,9 @@
 }
 
 body, #root {
-  @apply  min-h-screen;
+  @apply min-h-screen text-slate-800;
 }
 
 body {
-  @apply bg-slate-300;
+  @apply bg-slate-50;
 }
